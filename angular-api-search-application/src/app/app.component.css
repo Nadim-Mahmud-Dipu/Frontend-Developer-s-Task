@@ -33,6 +33,16 @@
   /* Should be removed. Only for demonstration */
 }
 
+.sub-heading {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main-message {
+  margin-top: 80px;
+  font-size: 60px;
+}
+
 .collapse {
   margin-right: 250px;
 }
