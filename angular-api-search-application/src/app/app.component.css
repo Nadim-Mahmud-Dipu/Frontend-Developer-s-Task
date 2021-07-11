@@ -32,3 +32,40 @@
   height: 300px;
   /* Should be removed. Only for demonstration */
 }
+
+.collapse {
+  margin-right: 250px;
+}
+
+.nav-item {
+  padding-right: 50px;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: black !important;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sign-up-button {
+  font-weight: bold;
+  color: #8668DD;
+  border: 3px solid #8668DD;
+  margin-right: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", "Courier New", monospace;
+  font-size: 40px;
+  font-weight: bold;
+  color: #8668DD !important;
+}
+
