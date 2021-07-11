@@ -65,8 +65,8 @@
 
 .sign-up-button {
   font-weight: bold;
-  color: #8668DD;
-  border: 3px solid #8668DD;
+  color: #7852E2;
+  border: 3px solid #7852E2;
   margin-right: 0;
   padding-right: 30px;
   padding-left: 30px;
@@ -76,7 +76,7 @@
   font-family: "Ubuntu", "Courier New", monospace;
   font-size: 40px;
   font-weight: bold;
-  color: #8668DD !important;
+  color: #7852E2 !important;
 }
 
 
@@ -96,8 +96,45 @@
 .search-button {
   padding-left: 30px !important;
   padding-right: 30px !important;
+  background-color: #6935FD;
+  font-weight: bold;
 }
 
 .error-message {
   margin-left: 200px !important;
 }
+
+
+footer {
+  margin-top: 180px;
+  margin-bottom: 0;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+footer .nav-item {
+  font-weight: lighter !important;
+}
+
+.footer-link {
+  color: black;
+}
+
+.search-result-city {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 3px;
+}
+
+.search-result-details {
+  background-color: white;
+  padding-top: 23px;
+  padding-bottom: 10px;
+  display: table-cell;
+  vertical-align: center;
+  border-radius: 3px;
+}
+
