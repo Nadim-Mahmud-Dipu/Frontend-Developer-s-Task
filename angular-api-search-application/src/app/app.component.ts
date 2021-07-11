@@ -23,16 +23,14 @@ export class AppComponent {
     try {
       this.dataService.test_api(city_name).subscribe((data) => {
         this.result = data["result"][0];
-        if(this.result == null) {
+        if (this.result == null) {
           this.message = "Sorry, we couldn't find anything matching that query.";
         } else {
           this.message = null;
         }
       });
     } catch (error) {
-      this.message = "Some error has occured! Please try again."
+      this.message = "Some error has occured! Please try again.";
     }
-
   }
-
 }

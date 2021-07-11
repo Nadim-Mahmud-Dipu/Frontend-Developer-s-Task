@@ -1,0 +1,21 @@
+<h1>Calling Rest API</h1>
+
+  <div class="container">
+
+    <!--    <label for="usr">Name:</label>-->
+    <input (keyup)="showResults(titleInput.value)" type="text" #titleInput class="form-control"/>
+    <br/>
+    <button
+      type="button"
+      (click)="showResults(titleInput.value)"
+      class="btn btn-primary"
+    >
+      Search
+    </button>
+    <h1 class="okay"> Okay </h1>
+    <div *ngIf="result">
+      <h2>{{result.city_name}}</h2>
+      <h2>{{result.short_code}}</h2>
+    </div>
+
+</div>
