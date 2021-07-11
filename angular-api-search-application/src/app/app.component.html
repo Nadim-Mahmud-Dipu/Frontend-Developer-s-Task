@@ -75,11 +75,63 @@
         </div>
       </div>
 
+      <div class="container">
+        <div class="search row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <form class="card card-sm">
+              <div class="card-body row no-gutters align-items-center">
+                <div class="col-auto">
+                  <i class="fas fa-search h5 text-body"></i>
+                  <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                </div>
+                <!--end of col-->
+                <div class="col">
+                  <input type="text" class="form-control form-control-borderless" #titleInput
+                         (keyup)="showResults(titleInput.value)" placeholder="Search for address"/>
+                </div>
+
+                <!--end of col-->
+                <div class="col-auto">
+                  <button class="search-button btn btn-primary" (keyup.enter)="showResults(titleInput.value)"
+                          (click)="showResults(titleInput.value)" type="button">
+                    Search
+                  </button>
+                </div>
+                <!--end of col-->
+              </div>
+            </form>
+          </div>
+        </div>
+        <small class="error-message" *ngIf="message"> {{message}} </small>
+      </div>
+      <br>
+
+      <div class="container" *ngIf="result">
+
+        <div class="search-result text-center">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-4 search-result-city">
+              <h4> {{result.city_name}}, {{result.short_code}} </h4>
+            </div>
+            <div class="col-4 search-result-details">
+              <i class="fas fa-exchange-alt"></i> ${{result.rate}}/{{result.apartment_bed}}
+              Beds/Appt...{{result.find_more}} more >
+            </div>
+            <div class="col"></div>
+          </div>
+          <br>
+
+        </div>
+
 
       </div>
-      <div class="column-3">
-      </div>
+
+
     </div>
+    <div class="column-3">
+    </div>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

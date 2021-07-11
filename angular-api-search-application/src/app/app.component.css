@@ -79,3 +79,25 @@
   color: #8668DD !important;
 }
 
+
+.form-control-borderless {
+  border: none;
+  font-size: 20px;
+}
+
+.form-control-borderless:hover,
+.form-control-borderless:active,
+.form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.search-button {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.error-message {
+  margin-left: 200px !important;
+}
